@@ -9,6 +9,7 @@
 
 ### Completed
 
+- Created `app-icon.svg` featuring a modern, dark-themed stopwatch aesthetic with a vibrant "GT" monogram for GetTimed.
 - Fixed CRUD operations for Job Types in Settings.
 - Improved `TimesheetModal.tsx` to process and persist entries into SQLite.
 - Wired Start Time & Duration inputs to the Draft form state to effectively save data.

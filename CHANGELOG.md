@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- **Added:** Created a professional `app-icon.svg` featuring a sleek, dark-themed stopwatch aesthetic with the "GT" monogram, suited for the GetTimed brand identity.
 - **Fixed:** Resolved `Maximum update depth exceeded` infinite loop tied to hook dependency rerenders in Expo SQLite implementations.
 - **Fixed:** Job Type CRUD functionality in `SettingsScreen.tsx` now correctly interacts with the SQLite database.
 - **Fixed:** The TimesheetModal now appropriately saves the timesheet to the database upon submission, rather than only clearing the draft.
