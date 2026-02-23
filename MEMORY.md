@@ -2,17 +2,29 @@
 
 ## Current Project State
 
-- In the process of initializing a new Expo React Native project.
-- Next steps: install dependencies (Nativewind, Expo SQLite, Zustand, Expo Notifications).
+- Completed the initial implementation of the GetTimed React Native Expo app.
+- All core features are developed: SQLite database layer, Zustand local storage, NativeWind UI components, and Expo Notifications.
 
 ## Active Tasks
 
-- Initializing project and setting up architecture.
+### Completed
+
+- Fixed CRUD operations for Job Types in Settings.
+- Improved `TimesheetModal.tsx` to process and persist entries into SQLite.
+- Wired Start Time & Duration inputs to the Draft form state to effectively save data.
+- Refactored `HomeScreen.tsx` to utilize the SQLite timesheet hooks for tracking weekly targets and history instead of placeholders.
+- Fixed a `Maximum update depth exceeded` React infinite loop caused by unmemoized hooks in Expo SQLite context loops.
+- Replaced the simple 1-tap Preset mode with a more robust horizontally sweeping Job Type pill selector paired with dual vertical Plus/Minus counters for exact timing.
+
+### Next Steps
+
+- Continue verifying app usability and flows within Expo Go.
+- Add editing functionality for existing local timesheets.
 
 ## Architectural Decisions
 
 - **Framework:** React Native + Expo Go
-- **Styling:** Nativewind + TailwindCSS
+- **Styling:** Nativewind v4 + TailwindCSS (Dark mode primary)
 - **Persistence:** Expo SQLite (instead of MMKV for standard Expo Go compatibility) + AsyncStorage for minimal settings.
 - **State Management:** Zustand
-- **Requirements:** Strictly no emojis, SVGs exclusively, dark mode with purple accents.
+- **Requirements:** Strictly no emojis, SVGs exclusively mapped in Icon.tsx.
